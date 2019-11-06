@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: service-config
+  profiles:
+    active: native
+  cloud: 
+    config: 
+      server: 
+        native: 
+          serach-locations: classpath:/config  
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
