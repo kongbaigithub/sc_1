@@ -1,9 +1,9 @@
-
 spring:
-  application:
-    name: service-hi
   profiles:
-    active: uat
+    active:
+    - dev
+  application:
+    name: service-feign
 eureka:
   client:
     service-url:
@@ -13,12 +13,10 @@ eureka:
 spring:
   profiles: dev
 server:
-  port: 8763
-   
+  port: 8767
+  
 ---
 spring:
-  profiles: uat
+  profiles: dev
 server:
-  port: 8764
-      
-  
+  port: 8768  

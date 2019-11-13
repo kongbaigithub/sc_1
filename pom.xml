@@ -48,5 +48,8 @@
   	<module>sc_1_eureka</module>
   	<module>sc_1_config</module>
     <module>sc_1_hi</module>
+    <module>sc_1_ribbon</module>
+    <module>sc_1_feign</module>
+    <module>sc_1_zuul</module>
   </modules>
 </project>

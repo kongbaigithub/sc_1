@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active:
+    - dev
+  application:
+    name: service-ribbon
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:8761/eureka/    
+      
+---
+spring:
+  profiles: dev
+server:
+  port: 8765
+  
+---
+spring:
+  profiles: uat
+server:
+  port: 8766    
