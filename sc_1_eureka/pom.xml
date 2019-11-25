@@ -28,28 +28,12 @@
     </dependency>
   </dependencies>
   
-  <plugins>
-	<plugin>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-maven-plugin</artifactId>
-		<configuration>
-			<source>1.8</source>
-			<target>1.8</target>
-			<archive>
-				<manifest>
-					<mainClass>org.sc_1_eureka.App</mainClass>
-					<addClasspath>true</addClasspath>
-					<classpathPrefix>lib/</classpathPrefix>
-				</manifest>
-			</archive>
-		</configuration>
-		<executions>
-			<execution>
-				<goals>
-					<goal>repackage</goal>
-				</goals>
-			</execution>
-		</executions>
-	</plugin>
-</plugins>
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  		</plugin>
+  	</plugins>
+  </build>
 </project>
